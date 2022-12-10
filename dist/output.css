@@ -663,6 +663,86 @@ body {
   font-family: Inter;
 }
 
+.loading-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #21242c;
+  -webkit-animation: fadeout 3s ease-in;
+          animation: fadeout 3s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  margin: 0px;
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.loading-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.loading-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  -webkit-animation: loading-ring 1.2s linear infinite;
+          animation: loading-ring 1.2s linear infinite;
+  /* THIS LINE HAS BEEN COMMENTED TO MAKE IT EASIER TO ADJUST THE POSITION OF THE LOADING RING. TO MAKE THE LOADING RING FADE OUT, DELETE THE COMMENT TEXT, THE SEMICOLON ON THE ABOVE LINE, AND THEN COPY AND PASTE THE REMANING TEXT FROM THIS LINE ON THE ABOVE LINE. IT SHOULD LOOK LIKE THIS: 'animation: loading-ring 1.2s linear infinite, fadeout 2s ease-in;' */
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes loading-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:mr-10 {
     margin-right: 2.5rem;
