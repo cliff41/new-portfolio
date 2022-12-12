@@ -13,6 +13,10 @@ body {
     color: white;
 }
 
+#about {
+    font-family: Inter;
+}
+
 #lists {
     font-family: Inter;
 }
