@@ -24,7 +24,7 @@ body {
     top: 0;
     left: 0;
     background-color: #21242c;
-    animation: fadeout 3s ease-in, zindex 3s ease-in;
+    animation: fadeout 2s ease-in, zindex 2s ease-in;
     animation-fill-mode: forwards;
     margin: 0px;
 }
@@ -59,7 +59,7 @@ body {
     border-radius: 50%;
     border: 6px solid #fff;
     border-color: #fff transparent #fff transparent;
-    animation: loading-ring 1.2s linear infinite, fadeout 2s ease-in;
+    animation: loading-ring 1.2s linear infinite, fadeout 1.5s ease-in;
     /* THIS LINE HAS BEEN COMMENTED TO MAKE IT EASIER TO ADJUST THE POSITION OF THE LOADING RING. TO MAKE THE LOADING RING FADE OUT, DELETE THE COMMENT TEXT, THE SEMICOLON ON THE ABOVE LINE, AND THEN COPY AND PASTE THE REMANING TEXT FROM THIS LINE ON THE ABOVE LINE. IT SHOULD LOOK LIKE THIS: 'animation: loading-ring 1.2s linear infinite, fadeout 2s ease-in;' */
     animation-fill-mode: forwards;
   }

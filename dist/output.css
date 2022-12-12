@@ -587,10 +587,6 @@ video {
   display: grid;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -619,6 +615,14 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .pb-3 {
@@ -687,8 +691,8 @@ body {
   top: 0;
   left: 0;
   background-color: #21242c;
-  -webkit-animation: fadeout 3s ease-in, zindex 3s ease-in;
-          animation: fadeout 3s ease-in, zindex 3s ease-in;
+  -webkit-animation: fadeout 2s ease-in, zindex 2s ease-in;
+          animation: fadeout 2s ease-in, zindex 2s ease-in;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   margin: 0px;
@@ -753,8 +757,8 @@ body {
   border-radius: 50%;
   border: 6px solid #fff;
   border-color: #fff transparent #fff transparent;
-  -webkit-animation: loading-ring 1.2s linear infinite, fadeout 2s ease-in;
-          animation: loading-ring 1.2s linear infinite, fadeout 2s ease-in;
+  -webkit-animation: loading-ring 1.2s linear infinite, fadeout 1.5s ease-in;
+          animation: loading-ring 1.2s linear infinite, fadeout 1.5s ease-in;
   /* THIS LINE HAS BEEN COMMENTED TO MAKE IT EASIER TO ADJUST THE POSITION OF THE LOADING RING. TO MAKE THE LOADING RING FADE OUT, DELETE THE COMMENT TEXT, THE SEMICOLON ON THE ABOVE LINE, AND THEN COPY AND PASTE THE REMANING TEXT FROM THIS LINE ON THE ABOVE LINE. IT SHOULD LOOK LIKE THIS: 'animation: loading-ring 1.2s linear infinite, fadeout 2s ease-in;' */
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
@@ -780,6 +784,12 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:mr-10 {
     margin-right: 2.5rem;
@@ -795,5 +805,13 @@ body {
 
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:pr-0 {
+    padding-right: 0px;
+  }
+
+  .lg\:pl-0 {
+    padding-left: 0px;
   }
 }
