@@ -50,8 +50,8 @@ body {
     height: 80px;
     z-index: 100;
     position: absolute;
-    top: 45%;
-    left: 47%;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
   }
 
   .loading-ring:after {
