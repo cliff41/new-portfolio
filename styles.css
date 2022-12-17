@@ -21,7 +21,7 @@ body {
     font-family: Inter;
 }
 
-.loading-wrapper {
+/* .loading-wrapper {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -31,7 +31,7 @@ body {
     animation: fadeout 2s ease-in, zindex 2s ease-in;
     animation-fill-mode: forwards;
     margin: 0px;
-}
+} */
 
 @keyframes fadeout {
     from {opacity: 1; }
@@ -44,29 +44,28 @@ body {
 }
 
 
-.loading-ring {
+/* .loading-ring {
     display: inline-block;
     width: 80px;
     height: 80px;
     z-index: 100;
+    color: red;
     position: absolute;
-    top: calc(50% - 40px);
-    left: calc(50% + 40px);
-  }
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
+  } */
 
-  .loading-ring:after {
+  /* .loading-ring:after {
     content: " ";
     display: block;
     width: 64px;
     height: 64px;
-    margin: 8px;
     border-radius: 50%;
     border: 6px solid #fff;
-    border-color: #fff transparent #fff transparent;
+    border-color: #fff transparent red transparent;
     animation: loading-ring 1.2s linear infinite, fadeout 1.5s ease-in;
-    /* THIS LINE HAS BEEN COMMENTED TO MAKE IT EASIER TO ADJUST THE POSITION OF THE LOADING RING. TO MAKE THE LOADING RING FADE OUT, DELETE THE COMMENT TEXT, THE SEMICOLON ON THE ABOVE LINE, AND THEN COPY AND PASTE THE REMANING TEXT FROM THIS LINE ON THE ABOVE LINE. IT SHOULD LOOK LIKE THIS: 'animation: loading-ring 1.2s linear infinite, fadeout 2s ease-in;' */
     animation-fill-mode: forwards;
-  }
+  } */
 
   @keyframes loading-ring {
     0% {
