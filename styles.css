@@ -22,7 +22,7 @@ body {
 }
 
 .loading-wrapper {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     top: 0;
@@ -40,7 +40,7 @@ body {
 
 @keyframes zindex {
     from {z-index: 3; }
-    to {opacity: 0; }
+    to {z-index: -1;}
 }
 
 
